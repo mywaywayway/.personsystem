@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.example.demo.common.Result;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,5 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user-entity")
 public class UserController {
+
+    @PostMapping
+     public Result save(@org.apache.ibatis.annotations.Result ) {
+
+     };
 
 }
